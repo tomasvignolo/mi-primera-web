@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./css/contacto.css">
+</head>
+<body>
+    <!-- bloque cabecera -->
+    <header class="header padding-bloques">
+        <div class="header__logo-container">
+            <a class="header__logo-link" href="./index.html">
+                <figure class="header__figure">
+                    <img class="header__logo" src="./assets/ecofit.png" alt="ecofit logo" />
+                </figure>
+            </a>
+            <h1 class="header__titulo">Gimnasio Ecológico</h1>
+        </div>
+    
+        <nav class="nav-principal">
+            <a href="index.html">Página principal</a>
+            <a href="programas.html">Programas de entrenamiento</a>
+            <a href="contacto.html">Registrate</a>
+        </nav>
+    </header>
+
+    <!-- bloque principal -->
+    <main>
+        <div class="contacto">
+            <h3>
+                ¿TE GUSTARÍA QUE TE AYUDE A IMPULSAR TU ENTRENAMIENTO PARA CONSEGUIR UN CAMBIO FÍSICO REAL?
+            </h3>
+            <p class="main__parrafo">
+                Deja de dar vueltas y quedarte siempre en el mismo punto. ¡Empecemos a trabajar juntos y llevemos tu físico y mentalidad a otro nivel!
+            </p>
+        </div>
+        
+        <div class="contact-container">
+            <div class="form-container">
+              <form class="form" action="./contacto.html" method="post">
+                <form class="form" action="./contacto.html" method="post">
+                    <label for="id-nombre">Nombre</label>
+                    <input
+                        id="id-nombre"
+                        name="nombre"
+                        type="text"
+                        minlength="3"
+                        placeholder="Ingrese su nombre"
+                        required
+                    />
+                    <label for="id-email">Email</label>
+                    <input id="id-email" name="email" type="email"
+                    placeholder="email@email.com" required />
+                    <label for="id-fecha">Fecha</label>
+                    <input id="id-fecha" name="fecha" type="date" required />
+                    <label for="id-consulta">Consulta</label>
+                    <textarea
+                        id="id-consulta"
+                        name="consulta"
+                        cols="30"
+                        rows="10"
+                        required
+                    ></textarea>
+                    <button type="submit">Enviar consulta</button>
+              </form>
+            </div>
+            <div class="ecofit-logo">
+              <img src="./assets/ecogym.png" alt="ecogym logo" class="logo-ecofit">
+            </div>
+          </div>
+          
+        
+    </main>
+    
+    <br>
+
+    <!-- bloque pie -->
+    <footer class="footer">
+        <div class="footer-cont">
+            <h3>Contacto</h3>
+            <p>Email: ecofit@gmail.com</p>
+            <p>Teléfono: (+54) 3491-405797</p>
+        </div>
+    
+        <div class="footer-info">
+            <h3>Redes sociales</h3>
+            <div class="redes-container">
+                <a href="https://www.instagram.com/tvignolo_" target="_blank"><img class="red-social" src="./assets/instagram.png" alt="instagram"/></a>
+                <a href="https://github.com/tomasvignolo" target="_blank"><img class="red-social" src="./assets/github.png" alt="github"/></a>
+                <a href="https://www.linkedin.com/in/tom%C3%A1s-vignolo-49072323a/" target="_blank"><img class="red-social" src="./assets/linkedin.png" alt="linkedin"/></a>
+                <a href="https://twitter.com/tomasvignolo_" target="_blank"><img class="red-social" src="./assets/x.jpg" alt="x"/></a>
+            </div>
+        </div>
+    
+        <div class="footer-links">
+            <h3>Vínculos de Ayuda</h3>
+            <ul>
+                <li><a href="https://www.hsnstore.com/blog/deportes/fitness/top-preguntas-principiantes-en-el-gimnasio/" target="_blank">Preguntas Frecuentes</a></li>
+                <li><a href="https://policies.google.com/privacy?hl=es" target="_blank">Política de Privacidad</a></li>
+                <li><a href="https://es.wikipedia.org/wiki/Términos_y_condiciones_de_uso" target="_blank">Términos y Condiciones</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

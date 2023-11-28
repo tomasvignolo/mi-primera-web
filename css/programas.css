@@ -1,0 +1,217 @@
+header {
+    background-color: #8FDB93; 
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+  }
+  
+  
+  .header__logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .header__logo {
+    width: 100px; 
+  }
+  
+  
+  .header__titulo {
+    margin: 0;
+    color: #333; 
+    margin-left: 0px; 
+  }
+  
+  
+  .nav-principal a {
+    color: #333; 
+    text-decoration: none;
+    margin-left: 20px; 
+  }
+  
+  
+  .nav-principal a:hover {
+    color: #FFFFFF; 
+  }
+
+
+
+
+
+.abajo {
+  transition: transform 0.3s ease-in-out;
+  margin: 30px;
+  padding: 10px;
+  background-color: beige;
+}
+
+.abajo:hover {
+  transform: scale(1.1);
+}
+
+#entrenamiento-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.entrenamiento {
+  transition: transform 0.3s ease-in-out;
+  background-color: rgba(27, 29, 27, 0.7);
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  flex: 0 0 calc(50% - 40px);
+  max-width: calc(50% - 40px);
+  box-sizing: border-box;
+}
+
+.entrenamiento:hover {
+  transform: scale(1.1);
+}
+
+a:hover {
+  animation: titilacion 0.5s infinite;
+}
+
+@keyframes titilacion {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+main__parrafo {
+  padding: 10px;
+  background-color: #978e8e;
+}
+
+video {
+  width: 60%;
+  height: auto;
+}
+
+.entrenamiento > a {
+  display: block;
+  margin-top: 10px;
+}
+
+/* Estilos adicionales para mantener la consistencia */
+h2 {
+  color: #fff; /* Color del texto */
+  background-color: #3a3a3a; /* Color de fondo */
+  padding: 10px; /* Ajusta el espaciado interno según tu preferencia */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+.main__parrafo {
+  padding: 10px;
+  background-color: rgb(142, 151, 149);
+}
+
+main {
+  text-align: center;
+}
+
+
+/* Centrar los elementos dentro de main */
+main h2, main p, main a, main .main__link {
+  text-align: center;
+  margin: 25px; /* Ajusta los márgenes automáticos para centrar */
+}
+
+/* Estilos para los enlaces dentro de main */
+main div a, main .main__link {
+  color: #fff; /* Color del texto del enlace */
+  background-color: #414141; /* Color de fondo del enlace */
+  padding: 10px; /* Ajusta el espaciado interno según tu preferencia */
+  border-radius: 5px; /* Bordes redondeados */
+  text-decoration: none; /* Quita el subrayado del enlace */
+}
+
+main div a:hover, main .main__link:hover {
+  background-color: #2e7260; /* Cambia el color de fondo al pasar el mouse */
+}
+
+
+
+.footer {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  border: 1px solid #333333;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: 0.3s;
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  margin-top: 15px;
+}
+
+.footer-cont,
+.footer-info,
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.footer-info h3,
+.footer-links h3,
+.footer-cont h3 {
+  margin-bottom: 10px; /* Ajusta el espacio entre los <h3> según sea necesario */
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+.redes-container {
+  display: flex;
+  align-items: center;
+}
+
+.red-social {
+  width: 50px;
+  margin-right: 10px; /* Ajusta el margen entre las imágenes según sea necesario */
+}
+
+.footer-info .red-social-container {
+  display: flex;
+  align-items: center;
+}
+
+.footer-info img {
+  width: 52px; /* Ajusta el tamaño según tus preferencias */
+  height: 52px; /* Ajusta el tamaño según tus preferencias */
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}

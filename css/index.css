@@ -1,0 +1,338 @@
+header {
+    background-color: #8FDB93; 
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  .header__logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .header__logo {
+    width: 100px;
+  }
+  
+  
+  .header__titulo {
+    margin: 0;
+    color: #333; /* Color del texto */
+    margin-left: 0px; /* Espaciado entre el logo y el título */
+  }
+  
+
+  .nav-principal a {
+    color: #333; 
+    text-decoration: none;
+    margin-left: 20px; 
+  }
+  
+  /* Estilo para cambiar el color al pasar el mouse sobre los enlaces en el header */
+  .nav-principal a:hover {
+    color: #FFFFFF; /* Color del texto al pasar el mouse */
+  }
+  
+  /* Estilo para centrar el título h1 en la mitad de la página */
+.main__titulo {
+    text-align: center;
+    margin-top: 30px; /* espacio sobre el título */
+    margin-bottom: 30px; /* espacio bajo el título */
+    animation: titilar 1s infinite;
+  }
+  
+  @keyframes titilar {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+  .main__parrafo {
+    margin-left: 70px;
+    margin-right: 70px;
+    text-align: justify;
+    padding: 10px;
+    background-color: #978e8e; /* Color de fondo gris */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .main__parrafo:hover {
+    transform: scale(1.05); /* Escalamos el párrafo al 105% del tamaño original al pasar el mouse por encima */
+}
+  
+  .main__parrafo span.destacado {
+    font-weight: bold;
+    color: #008000; 
+  }
+  
+ 
+  .main__titulo2 {
+    text-align: center;
+  }
+  
+
+  .main__parrafo2 {
+    text-align: left;
+    padding: 15px;
+  }
+  
+  /* Estilo para separar cada punto de la lista */
+  .main__parrafo2 > br {
+    display: none; /* Oculta los saltos de línea */
+    margin-bottom: 10px; /* Ajusta el espacio entre cada punto según tus preferencias */
+  }
+
+  /* Estilo para separar cada punto de la lista */
+  .main__parrafo2 > span {
+    display: block;
+    margin-bottom: 15px;
+    background-color: #aaca9a;
+    padding: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.main__parrafo2 > span:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+  
+  .main__parrafo2 > span > strong {
+    color: #008000; 
+  }
+
+  .main__titulo {
+    text-align: center;
+  }
+
+/* Estilos para el contenedor de imágenes */
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #161616;
+  box-shadow: 0 4px 8px rgba(7, 202, 0, 0.1); /* Añade una sombra suave al contenedor */
+  padding: 10px; /* Ajusta el espacio interno del contenedor */
+  margin: 40px;
+}
+
+
+.par-imagenes {
+  margin: 20px; /* Ajusta la distancia entre cada imagen */
+  overflow: hidden; /* Evita que la transición se salga del contenedor */
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 2px 4px rgba(30, 255, 0, 0.1); /* Añade una sombra suave a cada imagen */
+}
+
+.imagen-slider {
+  width: 320px; /* Ajusta el tamaño de las imágenes según tus preferencias */
+  height: 300px; /* Ajusta la altura deseada para todas las imágenes */
+  object-fit: cover; /* Ajusta el objeto para cubrir el contenedor */
+  transition: transform 0.3s ease-in-out; /* Transición para el efecto hover */
+}
+
+/* Efecto hover */
+.par-imagenes:hover {
+  transform: scale(1.1); /* Escala de la imagen al pasar el mouse */
+}
+
+
+.texto-main{
+  padding: 1px;
+  margin: 0px;
+  background-color: #d2e6d0;
+  text-align: center;
+  line-height: 30px;
+  margin: 280px;
+  margin-top: 20px; /* Ajusta el margen superior según tus preferencias */
+  margin-bottom: 30px; /* Ajusta el margen inferior según tus preferencias */
+  animation: cambioColor 2s infinite;
+}
+
+@keyframes cambioColor {
+  0% {
+    color: #34db42; /* Color inicial, ajusta según tus preferencias */
+  }
+  50% {
+    color: #000000; /* Color intermedio */
+  }
+  100% {
+    color: #34db42; /* Color final, vuelve al color inicial */
+  }
+}
+
+.container,
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px; /* Ajusta el margen según tus preferencias */
+  margin-bottom: 0px;
+}
+
+.whatsapp-link {
+  display: flex;
+  align-items: center;
+  line-height: 1; /* Ajusta el line-height para alinear verticalmente */
+}
+
+.whatsapp-logo {
+  margin-right: 12px; /* Ajusta el margen derecho según sea necesario */
+  width: 50px;
+  animation: titilacion 1s infinite;
+}
+
+.ubicacion{
+  width: 38px;
+}
+
+
+.texto-container{
+  animation: titilacion 1s infinite;
+}
+
+@keyframes titilacion {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+a:hover {
+  animation: titilacion 0.5s infinite;
+}
+
+@keyframes titilacion {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+
+.footer {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  border: 1px solid #333333;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: 0.3s;
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  margin-top: 15px;
+}
+
+.footer-cont,
+.footer-info,
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.footer-info h3,
+.footer-links h3,
+.footer-cont h3 {
+  margin-bottom: 10px; /* Ajusta el espacio entre los <h3> según sea necesario */
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+.redes-container {
+  display: flex;
+  align-items: center;
+}
+
+.red-social {
+  width: 50px;
+  margin-right: 10px; /* Ajusta el margen entre las imágenes según sea necesario */
+}
+
+.footer-info .red-social-container {
+  display: flex;
+  align-items: center;
+}
+
+.footer-info img {
+  width: 52px; /* Ajusta el tamaño según tus preferencias */
+  height: 52px; /* Ajusta el tamaño según tus preferencias */
+}
+
+a {
+  color: #3f3f3f;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.logo-container {
+    float: left;
+    margin: 0px 0;
+    margin-right: 12px
+}
+
+.redes-container {
+    margin: 0 auto; /* Centra el contenido */
+}
+
+.red-social {
+    display: inline-block;
+    margin: 10px;
+}
+
+.red-social img {
+    width: 50px; 
+    height: auto; 
+}
+
+.red-social p {
+    margin-top: 5px; /* Espacio entre la imagen y el texto */
+    font-size: 15px; /* Tamaño del texto */
+}
+
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}
